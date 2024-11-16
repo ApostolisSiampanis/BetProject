@@ -1,4 +1,6 @@
-public abstract class Bet {
+package bet;
+
+public abstract sealed class Bet permits BasketballBet, FootballBet {
     // The name of the game. We assume that the name is unique.
     private final String game;
     // The odd of the bet. We assume the same odd, regardless of which team will win
