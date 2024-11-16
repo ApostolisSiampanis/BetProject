@@ -1,6 +1,8 @@
+package bet;
+
 import java.util.List;
 
-public class FootballBet extends Bet{
+public final class FootballBet extends Bet{
     // The class contains the available outcomes of a football match.
     // 1: The first team wins, X: Draw, 2: The second team wins
     // The list of available options is immutable.
