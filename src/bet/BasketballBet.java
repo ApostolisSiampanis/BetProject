@@ -1,6 +1,8 @@
+package bet;
+
 import java.util.List;
 
-public class BasketballBet extends Bet{
+public final class BasketballBet extends Bet{
     // The class contains the available outcomes of a basketball match.
     // 1: The first team wins, 2: The second team wins
     // The list of available options is immutable.
