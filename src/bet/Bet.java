@@ -10,7 +10,7 @@ public abstract sealed class Bet permits BasketballBet, FootballBet {
     // The available choices of the bet
     private final List<String> choices;
     // The outcome of the bet
-    private final String outcome;
+    private String outcome;
 
     public Bet(String game, double odd, List<String> choices) {
         this.game = game;
@@ -32,6 +32,11 @@ public abstract sealed class Bet permits BasketballBet, FootballBet {
     // Returns the outcome of the bet
     public String getOutcome() {
         return outcome;
+    }
+
+    // Sets the outcome of the bet
+    public void setOutcome(String outcome) {
+        this.outcome = outcome;
     }
 
     // Returns the available choices of the bet
