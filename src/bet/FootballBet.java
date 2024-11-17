@@ -11,4 +11,8 @@ public final class FootballBet extends Bet{
     public FootballBet(String game, double odd){
         super(game, odd, choices);
     }
+
+    public List<String> getChoices() {
+        return choices;
+    }
 }
