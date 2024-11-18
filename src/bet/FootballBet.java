@@ -9,10 +9,10 @@ public final class FootballBet extends Bet{
     private static final List<String> choices = List.of("1", "X", "2");
 
     public FootballBet(String game, double odd){
-        super(game, odd, choices);
+        super(game, odd);
     }
 
-    public List<String> getChoices() {
+    public static List<String> getChoices() {
         return choices;
     }
 }
