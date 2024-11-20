@@ -1,13 +1,12 @@
 package bet;
 
-import java.util.List;
-
 public abstract sealed class Bet permits BasketballBet, FootballBet {
     // The name of the game. We assume that the name is unique.
     private final String game;
     // The odd of the bet. We assume the same odd, regardless of which team will win
     private final double odd;
 
+    // Constructor
     public Bet(String game, double odd) {
         this.game = game;
         this.odd = odd;

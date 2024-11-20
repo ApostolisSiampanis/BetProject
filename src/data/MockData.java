@@ -74,6 +74,7 @@ public final class MockData {
         );
     }
 
+    // Generates random bets for each customer
     public static void generateRandomBets(List<Customer> customerList, List<Bet> betList){
         customerList.forEach(customer -> {
             IntStream.range(0, random.nextInt(1,7)).forEach(i -> {

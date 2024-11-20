@@ -8,10 +8,12 @@ public final class BasketballBet extends Bet{
     // The list of available options is immutable.
     private static final List<String> choices = List.of("1", "2");
 
+    // Constructor
     public BasketballBet(String game, double odd){
         super(game, odd);
     }
 
+    // Returns the available outcomes of a basketball match
     public static List<String> getChoices() {
         return choices;
     }

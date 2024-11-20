@@ -17,12 +17,14 @@ public sealed class Customer implements IGiveBetList permits GoldCustomer, Plati
     // Total stake of the customer.
     private double totalStake = 0.0;
 
+    // Constructor
     public Customer(String name) {
         this.name = name;
         this.category = CustomerCategory.STANDARD;
         this.maxStake = setMaxStake(this.category);
     }
 
+    // Constructor
     public Customer(String name, CustomerCategory category) {
         this.name = name;
         this.category = category;

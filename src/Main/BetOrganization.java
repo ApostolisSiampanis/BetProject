@@ -38,6 +38,7 @@ public enum BetOrganization {
         return betList;
     }
 
+    // The method calculates the gains of the customer
     public void calculateGainsPerCustomer(Map<String, String> emulatedGamesResults) {
         customerList.forEach(customer -> {
             customer.getCustomerBetList().forEach(customerBet -> {

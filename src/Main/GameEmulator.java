@@ -35,6 +35,7 @@ public enum GameEmulator {
         });
     }
 
+    // Get the results of the games
     public Map<String, String> getEmulatedGamesResults(){
         return emulatedGamesResults;
     }

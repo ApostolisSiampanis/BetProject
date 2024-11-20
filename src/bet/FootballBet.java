@@ -8,10 +8,12 @@ public final class FootballBet extends Bet{
     // The list of available options is immutable.
     private static final List<String> choices = List.of("1", "X", "2");
 
+    // Constructor
     public FootballBet(String game, double odd){
         super(game, odd);
     }
 
+    // Returns the available outcomes of a football match
     public static List<String> getChoices() {
         return choices;
     }

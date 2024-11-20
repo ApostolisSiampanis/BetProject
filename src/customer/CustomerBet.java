@@ -38,7 +38,7 @@ public final class CustomerBet {
         }
 
         this.choice = choice;
-        payout = 0.0;
+        this.payout = 0.0;
     }
 
     // Returns the Bet object representing the details of the bet
